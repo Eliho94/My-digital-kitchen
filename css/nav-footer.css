@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Noto+Serif:ital@0;1&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  
+}
+/* Style pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px 20px; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour le logo de la barre de navigation */
+.navbar-logo img {
+    max-height: 40px; 
+}
+
+/* Style pour les liens de navigation */
+.navbar-links ul {
+    list-style: none; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-links a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px;
+}
+
+li a:hover{
+    color: rgb(19, 19, 20);
+    background-color: aliceblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px; 
+    color: white; 
+}
+
+.footer ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    color: white; 
+    text-decoration: none; 
+}
+
+
+.footer-mentions-legales  {
+    flex: 1; 
+    
+}
+.footer-mentions-legales a {
+    color: white; 
+            text-decoration: none; 
+            margin: 0 10px; 
+}
+
+
+.footer-social-links ul {
+    list-style: none; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-social-links a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px;
+}
+
+
