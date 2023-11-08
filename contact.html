@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contact.css">
     <title>Contactez-nous</title>
@@ -24,18 +24,77 @@
             </ul>
         </div>
     </nav>
+
     <hr class="menu-separation">
+    <div>
+        <h1> Nous contacter</h1>
 
-    <section class="contact">
+        <div class="separation">
+            <hr>
+            <span class="fas fa-spa"></span>
+            <hr>
+        </div>
+        
+            <section class="contacts">
 
-    </section>
+                <div class="contact-form">
+                    <form>
+                        <label for="name">Nom* :</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="Prenom">Prénom* :</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="phone">Téléphone* :</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="message">Message* :</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+                <div class="infos">
+
+                    <div class="adresse">
+                        <h2>Adresse</h2>
+    
+                        <p>
+                            <span class="far fa-map-marker-alt"></span>
+                            Place de la Commune, Puteaux
+                        </p>
+                    </div>
+    
+                    <div class="horaires">
+                        <h2>Ouverture</h2>
+    
+                        <p>Tous les jours <b>de 8h - 23h </b></p>
+                    </div>
+    
+                    <div>
+                        
+    
+                        <p>
+                            <span class="far fa-phone-alt"></span>
+                            0601233211
+                        </p>
+    
+                        <p>
+                            <span class="far fa-envelope"></span>
+                            contact@gmail.fr
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        
+    </div>
+         
+
+
 
 
 
     <footer class="footer">
         <h5>&copy; 2023 Tous droits résérvé</h5>
         <h5>
-           <a href="">Mentions legales</a> 
+            <a href="">Mentions legales</a>
         </h5>
 
         <div class="icons">
@@ -51,4 +110,5 @@
         </div>
     </footer>
 </body>
+
 </html>
