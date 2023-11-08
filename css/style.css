@@ -18,6 +18,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Navigation */
 .navbar{
     width: 100vw;
     height: 6rem;
@@ -45,8 +46,7 @@ html {
 }
 .nav-items li{
     padding: 1rem;
-    /* font-size: 2rem; */
-    
+   
 }
 .nav-items a {
     padding: 0.4rem;
@@ -61,16 +61,23 @@ html {
     text-decoration:underline;
     /* transition: all 0.3s; */
 }
+
+.menu-separation{
+    height: 2px;
+    width: 100vw;
+    margin: 0 ;
+}
+/* Carousel */
 .carrousel{
     height: 80vh;
-    width: 98vw; 
+    width: 100vw; 
     border-radius: 10px;
     margin: 0 auto;
 }
 .carrousel img{
     border-radius: 10px;
     height: 100%;
-    width: 100%; 
+    width: 99%; 
     object-fit:cover;
     object-position:center; 
 }
@@ -210,5 +217,165 @@ hr{
 }
 .icons a:hover{
     transform: scale(1.2);
+}
+
+/* Media Queries */
+@media screen  and (max-width: 992px){
+    .box-description{
+        width: 90vw;
+        margin: 2rem auto ;
+    }
+    .presentation{
+        width: 64%;
+    }
+    .infos{
+        width: 28%;
+        background-color: #fff;
+        padding: 1.2rem;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .nav-picture{
+        height: 36px;
+    }
+    .nav-items a {
+        padding: 0.4rem;
+        font-size: 2.2rem;
+    }
+    .carrousel{
+        height: 60vh;
+    }
+    h1{
+        font-size: 3.2rem;        
+    }
+    .box-description{
+        flex-direction: column;
+    }
+    .presentation{
+        width: 100%;
+        padding: 0;
+    }
+    .presentation p{
+        font-size: 1.6rem;
+    }
+    .btn-order .btn{
+        font-size: 1.5rem;
+        border: 1px solid green;
+        font-weight: normal;
+    }
+    .infos{
+        margin-top: 1rem;
+        width: 100%;
+        padding: 10px 14px;
+
+    }
+    .infos h2{
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+    .infos hr{
+        width: 40px;
+        margin: 0;
+        height: 2px;
+    }
+    .infos p{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+
+@media screen  and (max-width: 576px){
+    .navbar{
+        height: 4rem;
+    }
+    .nav-picture{
+        height: 28px;
+        width: 90px; 
+        margin-left: 0;  
+    }
+    .nav-items{
+        margin-right: 0;  
+    }
+    .nav-items a {
+        padding: 0.4rem;
+        font-size:1.8rem;
+    }
+    .carrousel{
+        height: 46vh;
+    }
+    .description{
+        padding: 1.2rem;
+    }
+    h1{
+        font-size: 2.6rem; 
+        margin-top: 1rem;       
+    }
+    .separation{
+        margin: 0.6rem;
+    }
+    .separation hr{
+        width: 12rem;
+        height: 4px;
+        margin: 0 1rem;
+    }
+    .presentation p{
+        font-size: 1.4rem;
+    }
+    .btn-order .btn{
+        font-size: 1.4rem;
+        padding: 8px 12px;
+    }
+ 
+    .infos h2{
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+    .infos hr{
+        width: 28px;
+    }
+    .infos p{
+        font-size: 1.2rem;
+    }
+    .footer{
+        padding: 2rem;
+    }
+    .footer h5{
+        font-size: 1.2rem;
+    }
+    .footer a {
+        font-size: 1.2rem;
+    }
+  
+    .icons a{
+        font-size: 1.3rem;
+    }
+    .icons a:hover{
+        transform: scale(1.1);
+    }    
+}
+@media screen  and (max-width: 400px){
+    .nav-picture{
+        height: 26px;
+        width: 90px; 
+    }
+    .nav-items li{
+        padding: 0.2rem;
+       
+    }
+    .nav-items a {
+        font-size:1.4rem;
+    }
+    .footer{
+        padding: 1.2rem ;
+    }
+    .icons a{
+        text-decoration: none;
+        margin: 0 2px;
+        font-size: 1.4rem;
+    }
 }
 
