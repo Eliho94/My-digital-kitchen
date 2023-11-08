@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My digital kitchen</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav-footer.css">
+    <link rel="stylesheet" href="/css/carrousel.css">
+    <title>My digital kitchen</title>
 </head>
 
 <body>
     <nav class="navbar">
+
         <div class="nav-picture">
             <img src="images/logo.png" alt="logo du site">
         </div>
@@ -22,26 +26,166 @@
         </div>
     </nav>
     <section class="carrousel">
-        <img src="images/carousel/img_1.jpg" alt="salle restorant">
+        <div>
+            <div class="carousel">
+    
+              <ul class="slides">
+    
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+    
+                  <div class="slide-image">
+                    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg"> -->
+                    <img src="images/carousel/img_1.jpg">
+                  </div>
+    
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+    
+                    <label for="img-2" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+    
+                </li>
+    
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <!-- <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true"> -->
+                    <img src="images/carousel/img_2.jpg">
+                </div>
+                  <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+    
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <!-- <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"> -->
+                    <img src="images/carousel/img_3.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+    
+                <div class="carousel-dots">
+                  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                </div>
+    
+              </ul>
+            </div>
+        </div>
+
+        <!-- <img src="images/carousel/img_1.jpg" alt="salle restorant"> -->
         <!-- <img src="images/carousel/img_2.jpg" alt="salle restorant">
         <img src="images/carousel/img_3.jpg" alt="salle restorant">
         <img src="images/carousel/img_4.jpg" alt="salle restorant"> -->
 
     </section>
+
+    <section class="description">
+        <h1>My Digital Kitchen</h1>
+        <div class="separation">
+            <hr>
+            <span class="fas fa-spa"></span>
+            <hr>
+        </div>
+        
+        <div class="box-description">
+
+            <div class="presentation">
+                <p>My Digital Kitchen est un restaurant gastronomique qui propose 
+                    une cuisine de qualité tout en respectant le choix des 
+                    producteurs.
+                </p>
+                <p>Situé à deux pas du parvis de la Défense, votre restaurant vous 
+                    accueille toute la journée et propose même des petits déjeuners
+                    pour une pause gourmande avant d’aller au travail. 
+                </p>
+                <p>Le restaurant idéal pour les petites et grandes occasions 
+                    professionnelles ou en famille. Découvrez notre menu du moment
+                    et contactez-nous pour toute question
+                </p>
+                <p>
+                    Trop occupé par le travail ? Profitez de notre service de 
+                    livraison à tout moment.
+                </p>
+        
+                <div class="btn-order">
+                    <a href="contact.html" class="btn">Réserver une table</a>
+                    <a href="contact.html" class="btn">Livraison</a>
+                </div>
+            </div>
+
+            <div class="infos">
+
+                <div class="adresse">
+                    <h2>Adresse</h2>
+                    <hr>
+                    <p>
+                        <span class="far fa-map-marker-alt"></span>
+                        Place de la Commune, Puteaux
+                    </p>                                                                                               
+                </div>
+
+                <div class="horaires">
+                    <h2>Ouverture</h2>
+                    <hr>
+                    <p>Tous les jours <b>de 8h - 23h </b></p>                    
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <hr>
+                    <p>
+                        <span class="far fa-phone-alt"></span>
+                        0601233211
+                    </p>                                            
+
+                    <p>
+                        <span class="far fa-envelope"></span>
+                        contact@gmail.fr
+                    </p>
+                                                                           
+                </div>
+            </div>
+        </div>
+
+    </section>
+  
     
     <footer class="footer">
         <h5>&copy; 2023 Tous droits résérvé</h5>
-        <h5>Mentions legales </h5>
+        <h5>
+           <a href="">Mentions legales</a> 
+        </h5>
 
         <div class="icons">
-            <a href="#">
-                <img src="images/facebook.png" alt="iconne facebook">
+            <a href="https://www.facebook.com/?locale=fr_FR">
+                <span class="fab fa-facebook-square"></span>
             </a>
-            <a href="#">
-                <img src="images/linkedin.png" alt="iconne linkedin">
+            <a href="https://twitter.com/?lang=fr">
+                <span class="fab fa-twitter"></span>
             </a>
-            <a href="#">
-                <img src="images/instagram.png" alt="icnne instagram">
+            <a href="https://www.instagram.com/">
+                <span class="fab fa-instagram"></span>
             </a>
         </div>
     </footer>
