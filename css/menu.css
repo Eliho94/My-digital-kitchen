@@ -13,7 +13,7 @@ h1{
     padding-top: 2rem;
 }
 .container-plats{
-    width: 80vw;
+    width: 90vw;
     margin: 2rem auto 0 auto;
     padding: 2rem;
     display:flex;
@@ -23,16 +23,13 @@ h1{
 }
 
 .card-plat{
-    width: 44%;
+    width: 48%;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
     height: auto;
     padding: 1rem;
     border-radius: 6px;
 }
-/* .card-header{
-    padding: 1rem;
-    
-} */
+
 .card-header img{
     width: 100%;
     height: 40rem;
@@ -66,13 +63,64 @@ h1{
 .plat-infos .btn{
     text-decoration: none;
     font-size: 1.6rem;
-    color: blue;
+    color: green;
     padding: 6px 12px;
-    border: 2px solid blue;
+    border: 2px solid green;
     border-radius: 8px;
     transition: all .3s
 }
 .plat-infos .btn:hover{
     color: #fff;
-    background-color: blue;
+    background-color: green;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    .card-header img{
+        width: 100%;
+        height: 34rem;
+    }
+    .container-plats{
+        width: 100vw;
+        margin: 2rem auto 0 auto;
+        gap:2.2rem;
+    }
+    .card-plat{
+        width: 48%;
+    }
+   
+}
+@media screen and (max-width: 768px) {
+    .card-plat{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container-plats{
+        padding: 1rem;
+    }
+    .card-header img{
+        width: 100%;
+        height: 30rem;
+    }
+    .card-body h2{
+        font-size: 1.8rem;
+    }
+    .card-body p{
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+    .plat-infos{
+        flex-direction: column;
+    }
+    .plat-infos .btn{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .card-header img{
+        height: 22rem;
+    }
 }
