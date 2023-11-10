@@ -120,7 +120,11 @@ h1{
     }
 }
 @media screen and (max-width: 450px) {
+    .card-plat{
+        width: 98%;
+    }
     .card-header img{
         height: 22rem;
     }
+
 }
