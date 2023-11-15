@@ -1,6 +1,7 @@
 :root{
     --main-color: #0f0f0f;
     --secondary-color: #f5c209;
+    /* --secondary-color: #dbc77e; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
@@ -189,23 +190,24 @@ hr{
 /* Footer */
 .footer{
     height: 4rem;
-    background-color: var(--secondary-color);
-    color: blue; 
+    background-color:#f3d054;
+    color: black; 
     /* color: var(--main-color);  */
     padding: 2.4rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer h5{
+.footer p{
     font-size: 1.6rem;
 }
 .footer a {
     text-decoration: none;
-    color: blue; 
+    color: black; 
     font-size: 1.6rem;
     transition: all 0.3s;
 }
+
 .footer a:hover{
     transform: scale(1.1);
 }
@@ -218,10 +220,11 @@ hr{
     text-decoration: none;
     margin: 0 6px;
     font-size: 2.4rem;
-    color: blue;
+    color: black;
 }
 .icons a:hover{
     transform: scale(1.2);
+    color: blue;
 }
 
 /* Media Queries */
@@ -348,7 +351,7 @@ hr{
     .footer{
         padding: 2rem;
     }
-    .footer h5{
+    .footer p{
         font-size: 1.2rem;
     }
     .footer a {
