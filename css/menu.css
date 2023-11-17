@@ -28,6 +28,10 @@ h1{
     height: auto;
     padding: 1rem;
     border-radius: 6px;
+    transition: all 0.3s;
+}
+.card-plat:hover{
+    transform: scale(1.01);
 }
 
 .card-header img{
